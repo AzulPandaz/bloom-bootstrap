@@ -1,0 +1,101 @@
+:root{
+    --header: #26292e;
+    --topback: #e7718b;
+    --middleback: #f4f4f6;
+    --botback: white;
+    --text: #d9d9da;
+    --headerText:'Pacifico', cursive;
+    --subtext:'Courgette', cursive;
+}
+/* general rules */
+.header{
+    background-color: var(--header);
+}
+.logo{
+    color: white;
+    font-family: var(--headerText);
+}
+.top-main{
+    background-color: var(--topback);
+}
+.middle-main{
+    background-color: var(--middleback);
+}
+.lower-main{
+    background-color: var(--botback);
+}
+.footer{
+    background-color: var(--header);
+}
+li{
+    list-style-type: none;
+}
+
+/* end of general rules */
+.name{
+    font-size: 20px;
+    font-weight: bold;
+}
+.colophon{
+    color:white;
+}
+/* Media qurey */
+/* Small rules
+-Put margin at top to space header and icon
+-At top-main add margin between buttons
+-make laptop slightly larger
+-give mgimage margin bot or top
+headerwithimg needs margin to space between
+*/
+@media (min-width:576px) and (max-width:767px) {
+    .mgimage{
+        margin: 20px 0px;
+    }
+}
+@media (min-width:576px) and (max-width:767px) {
+    .button{
+        margin: 0px 20px;
+    }
+}
+/* end */
+
+/* ICON STUFF */
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+}
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.icon-name {
+    font-size: 32px;
+    color: red;
+}
+  ========================================== */
+.icon{
+    color: black;
+    font-size: 40px;
+}
+.icon-search{
+    width: 225px;
+    height: 120px;
+    color: white;
+    background: black;
+    border: 4px solid grey;
+    padding: 20px;
+}
+.header .icon{
+    background-color: white;
+    border:1px solid white;
+    border-radius: 75%
+}
+.footer .icon{
+    background-color: white;
+    border:1px solid white;
+    border-radius: 75%
+}
+/* End of ICON STUFF */
